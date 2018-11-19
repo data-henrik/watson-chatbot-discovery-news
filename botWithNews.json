@@ -1,0 +1,361 @@
+{
+  "status": "Available", 
+  "learning_opt_out": false, 
+  "intents": [
+    {
+      "updated": "2018-11-19T15:24:52.730Z", 
+      "description": "ask about news", 
+      "intent": "news", 
+      "examples": [
+        {
+          "text": "what was in the newspaper today", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "do you have press articles on Google", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "what does the press say about Apple", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "tell me news", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "what is making the headlines", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "what are the news for IBM", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }
+      ], 
+      "created": "2018-11-19T15:24:52.730Z"
+    }, 
+    {
+      "updated": "2018-11-19T15:24:52.730Z", 
+      "description": null, 
+      "intent": "thanks", 
+      "examples": [
+        {
+          "text": "Cheers", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "Nice one", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "Thank you", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "Thanks watson", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "Thanks", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "Ta", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "Cheers watson", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }
+      ], 
+      "created": "2018-11-19T15:24:52.730Z"
+    }, 
+    {
+      "updated": "2018-11-19T15:24:52.730Z", 
+      "description": null, 
+      "intent": "help", 
+      "examples": [
+        {
+          "text": "What can you do?", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "What service do you offer?", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "Are you able to help me?", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "I'm not sure what to ask", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }, 
+        {
+          "text": "I need some help", 
+          "updated": "2018-11-19T15:24:52.730Z", 
+          "created": "2018-11-19T15:24:52.730Z"
+        }
+      ], 
+      "created": "2018-11-19T15:24:52.730Z"
+    }
+  ], 
+  "name": "NewsBot", 
+  "language": "en", 
+  "created": "2018-11-19T15:24:52.730Z", 
+  "description": "A small bot showing IBM Watson Discovery News", 
+  "updated": "2018-11-19T15:51:47.018Z", 
+  "entities": [
+    {
+      "updated": "2018-11-19T15:24:52.730Z", 
+      "description": null, 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "entity": "sys-time", 
+      "values": [], 
+      "metadata": null
+    }, 
+    {
+      "updated": "2018-11-19T15:24:52.730Z", 
+      "description": null, 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "entity": "sys-date", 
+      "values": [], 
+      "metadata": null
+    }, 
+    {
+      "updated": "2018-11-19T15:28:01.734Z", 
+      "description": null, 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "entity": "newsTopic", 
+      "values": [
+        {
+          "updated": "2018-11-19T15:28:01.734Z", 
+          "created": "2018-11-19T15:24:52.730Z", 
+          "value": "topicInQuotes", 
+          "patterns": [
+            "[\"\u201e\u201c][A-Za-z0-9.:| @\\']+[\"\u201d\u201c]"
+          ], 
+          "type": "patterns", 
+          "metadata": null
+        }
+      ], 
+      "metadata": null
+    }, 
+    {
+      "updated": "2018-11-19T15:24:52.730Z", 
+      "description": null, 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "entity": "sys-location", 
+      "values": [], 
+      "metadata": null
+    }
+  ], 
+  "counterexamples": [], 
+  "system_settings": null, 
+  "dialog_nodes": [
+    {
+      "updated": "2018-11-19T15:24:52.730Z", 
+      "description": null, 
+      "parent": "slot_8_1542634233207", 
+      "title": null, 
+      "event_name": "focus", 
+      "conditions": null, 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "dialog_node": "handler_10_1542634233207", 
+      "previous_sibling": "handler_9_1542634233207", 
+      "context": null, 
+      "output": {}, 
+      "metadata": null, 
+      "type": "event_handler", 
+      "go_to": null
+    }, 
+    {
+      "updated": "2018-11-19T15:38:20.566Z", 
+      "description": null, 
+      "parent": "slot_8_1542634233207", 
+      "title": null, 
+      "event_name": "input", 
+      "conditions": "@newsTopic.literal", 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "dialog_node": "handler_9_1542634233207", 
+      "previous_sibling": null, 
+      "context": {
+        "topic": "@newsTopic.literal"
+      }, 
+      "output": {}, 
+      "metadata": {}, 
+      "type": "event_handler", 
+      "go_to": null
+    }, 
+    {
+      "updated": "2018-11-19T15:51:47.018Z", 
+      "description": null, 
+      "parent": "node_1_1542634195686", 
+      "title": "news-child", 
+      "conditions": "#news", 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "dialog_node": "node_2_1542634195718", 
+      "previous_sibling": "slot_8_1542634233207", 
+      "context": null, 
+      "output": {
+        "text": {
+          "values": [
+            "Here is the news: $myNews", 
+            "This is what I found: <? $myNews['results'].![title].join(' // ') ?>"
+          ], 
+          "selection_policy": "sequential"
+        }
+      }, 
+      "metadata": {}, 
+      "type": "standard", 
+      "go_to": null
+    }, 
+    {
+      "updated": "2018-11-19T15:38:20.277Z", 
+      "description": null, 
+      "parent": "node_1_1542634195686", 
+      "title": null, 
+      "conditions": null, 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "dialog_node": "slot_8_1542634233207", 
+      "previous_sibling": null, 
+      "context": null, 
+      "variable": "$topic", 
+      "output": {}, 
+      "metadata": {}, 
+      "type": "slot", 
+      "go_to": null
+    }, 
+    {
+      "updated": "2018-11-19T15:24:52.730Z", 
+      "description": null, 
+      "parent": null, 
+      "title": "Anything else", 
+      "conditions": "anything_else", 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "dialog_node": "Anything else", 
+      "previous_sibling": "node_1_1542634195686", 
+      "context": null, 
+      "output": {
+        "text": {
+          "values": [
+            "Sorry I didn't quite get that", 
+            "would you repeat that for me please"
+          ], 
+          "selection_policy": "random"
+        }
+      }, 
+      "metadata": {}, 
+      "type": "standard", 
+      "go_to": null
+    }, 
+    {
+      "digress_out_slots": "not_allowed", 
+      "updated": "2018-11-19T15:30:51.942Z", 
+      "description": null, 
+      "parent": null, 
+      "title": "client-side news", 
+      "conditions": "#news", 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "dialog_node": "node_1_1542634195686", 
+      "actions": [
+        {
+          "type": "client", 
+          "name": "henriktest", 
+          "parameters": {
+            "topic": "<? $topic ?>", 
+            "input": "<? input ?>"
+          }, 
+          "result_variable": "myNews"
+        }
+      ], 
+      "digress_in": "does_not_return", 
+      "previous_sibling": "Thanks", 
+      "context": {
+        "skip_user_input": true
+      }, 
+      "digress_out": "allow_all", 
+      "output": {}, 
+      "metadata": {
+        "fallback": "leave"
+      }, 
+      "type": "frame", 
+      "go_to": {
+        "dialog_node": "node_2_1542634195718", 
+        "return": null, 
+        "selector": "body"
+      }
+    }, 
+    {
+      "updated": "2018-11-19T15:24:52.730Z", 
+      "description": null, 
+      "parent": null, 
+      "title": "Thanks", 
+      "conditions": "#thanks", 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "dialog_node": "Thanks", 
+      "previous_sibling": "Help", 
+      "context": null, 
+      "output": {
+        "text": {
+          "values": [
+            "No problem!", 
+            "No worries!", 
+            "You're welcome!", 
+            "That's perfectly alright!", 
+            "Any time"
+          ], 
+          "selection_policy": "random"
+        }
+      }, 
+      "metadata": {}, 
+      "type": "standard", 
+      "go_to": null
+    }, 
+    {
+      "updated": "2018-11-19T15:29:19.495Z", 
+      "description": null, 
+      "parent": null, 
+      "title": "Help", 
+      "conditions": "#help", 
+      "created": "2018-11-19T15:24:52.730Z", 
+      "dialog_node": "Help", 
+      "previous_sibling": null, 
+      "context": null, 
+      "output": {
+        "text": {
+          "values": [
+            "I can show news. Enter: Show news about \"IBM buys Red Hat\" or \"Watson in outer space\""
+          ], 
+          "selection_policy": "sequential"
+        }
+      }, 
+      "metadata": {}, 
+      "type": "standard", 
+      "go_to": null
+    }
+  ], 
+  "metadata": {
+    "api_version": {
+      "major_version": "v1", 
+      "minor_version": "2017-04-21"
+    }
+  }
+}
