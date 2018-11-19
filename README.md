@@ -23,6 +23,7 @@ Here is a sample conversation:
 ]
 
 
+## Architecture / Flow
 
-
+Within the Dialog is a node news-child. It extracts the search term for Discovery and sets up a client action. The Watson Conversation Tool processes that action by directing the execution to the module [processDiscoveryNews4chat.py](processDiscoveryNews4chat.py). The function inside the module sets up a session with Discovery and performs a natural language query with the search term. The result is passed back to Watson Assistant in the specified variable, myNews.
 
