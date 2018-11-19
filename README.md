@@ -10,5 +10,17 @@ You can test the chatbot using the following command. Use your workspace_id:
 
 If you want to see the full JSON structures then leave out the option **outputonly**.
 
+Here is a sample conversation:
+> Please enter your input message:   
+> news about "IBM Cloud"   
+> \>\> processing client actions...   
+>   
+> Response:   
+> [
+  "This is what I found IBM reinforces enterprise multicloud growth // International Business Machines : IBM Introduces New Services to Automate Cloud Migration // Here's What You Missed Out by Overlooking IBM's Stock // IBM Extends Reach of Kubernetes Platform to Multiple Clouds // IBM reinforces multicloud growth with automation tools, ServiceNow expansion // Hundreds of Leading Global Enterprises Deploy IBM Cloud Private // SES Networks Enables Direct Connectivity to IBM Cloud via Global Satellite Network // International Business Machines : Hundreds of Leading Global Enterprises Deploy IBM Cloud Private // SES Networks Enables Direct Connectivity to IBM Cloud via Global Satellite Network // Industry Insight: IBM on Multicloud Search and AI Strategy"
+]
+
+
+
 
 
