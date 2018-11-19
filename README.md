@@ -2,7 +2,9 @@
 A small chatbot showing how to incorporate IBM Watson Discovery News into a Watson Assistant bot
 
 ## Setup
-Follow the instructions for the [Watson Conversation Tool](https://github.com/data-henrik/watson-conversation-tool) to configure the service credentials for IBM Watson Assistant. Then, in [processDiscoveryNews4chat.py](processDiscoveryNews4chat.py) replace the values for username and password with the correct ones for the Discovery service.
+In Watson Assistant create a new skill by importing the file [botWithNews.json](botWithNews.json).
+
+Then, follow the instructions for the [Watson Conversation Tool](https://github.com/data-henrik/watson-conversation-tool) to configure the service credentials for IBM Watson Assistant. Then, in [processDiscoveryNews4chat.py](processDiscoveryNews4chat.py) replace the values for username and password with the correct ones for the Discovery service.
 
 ## Test
 You can test the chatbot using the following command. Use your workspace_id:
