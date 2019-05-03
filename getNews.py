@@ -34,7 +34,7 @@ def main(args):
         collection_id,
         natural_language_query=args["topic"],
         deduplicate="true",
-        sort="-score,-publication_date",
+        sort="-publication_date,-score",
         return_fields='title,url,publication_date')
 
     # Extract only the title, publication date and url
