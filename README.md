@@ -1,3 +1,7 @@
+**Note:**
+
+A version for integrating [Watson Discovery News as web action is in the branch **function**](https://github.com/data-henrik/watson-chatbot-discovery-news/tree/function).
+
 # Small chatbot with current news
 A small chatbot showing how to incorporate IBM Watson Discovery News into a Watson Assistant bot
 
